@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_try_engage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_try_engage",
+  "parent":{
+    "name":"scr_actor",
+    "path":"folders/Prototype_OOP/Scripts/scr_actor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

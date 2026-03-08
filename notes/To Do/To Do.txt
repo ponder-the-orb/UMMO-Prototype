@@ -1,0 +1,26 @@
+
+Floating Text
+Fix Combat
+Consolidate Globals
+Menu
+Combat Menu
+Targeting logic?
+
+Thirst?
+NPCs
+Crafting?
+Farming
+Animals
+Plants
+Soil
+Mining
+Cooking
+Food
+Drinks
+Chemistry
+Refinement
+Mechanical?(Hextech?)
+Electronic(Magitech)?
+Lights
+Campfires
+

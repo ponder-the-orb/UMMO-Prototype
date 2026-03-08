@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_advance_time",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_advance_time",
+  "parent":{
+    "name":"scr_time_system",
+    "path":"folders/Prototype_OOP/Scripts/scr_time_system.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

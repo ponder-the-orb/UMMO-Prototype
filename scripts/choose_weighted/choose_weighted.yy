@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"choose_weighted",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"choose_weighted",
+  "parent":{
+    "name":"npc_generate_soul",
+    "path":"folders/Prototype_OOP/Scripts/npc_generate_soul.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"go_back",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"go_back",
+  "parent":{
+    "name":"menu_setup",
+    "path":"folders/Prototype_OOP/Scripts/menu_setup.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

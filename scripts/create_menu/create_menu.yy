@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"create_menu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_menu",
+  "parent":{
+    "name":"menu_setup",
+    "path":"folders/Prototype_OOP/Scripts/menu_setup.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

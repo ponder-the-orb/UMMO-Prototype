@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_clean_dead_units",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_clean_dead_units",
+  "parent":{
+    "name":"scr_battle_functions",
+    "path":"folders/Prototype_OOP/Scripts/scr_battle_functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

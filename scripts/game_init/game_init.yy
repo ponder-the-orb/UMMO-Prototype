@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"game_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"game_init",
+  "parent":{
+    "name":"game_init",
+    "path":"folders/Prototype_OOP/Scripts/game_init.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

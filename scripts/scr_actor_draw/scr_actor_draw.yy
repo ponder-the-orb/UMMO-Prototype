@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_actor_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_actor_draw",
+  "parent":{
+    "name":"scr_actor",
+    "path":"folders/Prototype_OOP/Scripts/scr_actor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

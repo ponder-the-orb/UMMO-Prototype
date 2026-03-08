@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"npc_generate_soul",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"npc_generate_soul",
+  "parent":{
+    "name":"npc_generate_soul",
+    "path":"folders/Prototype_OOP/Scripts/npc_generate_soul.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

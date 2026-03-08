@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_draw_billboard",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw_billboard",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Prototype_OOP/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

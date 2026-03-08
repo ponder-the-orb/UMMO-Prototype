@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"begin_action",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"begin_action",
+  "parent":{
+    "name":"scr_battle_functions",
+    "path":"folders/Prototype_OOP/Scripts/scr_battle_functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

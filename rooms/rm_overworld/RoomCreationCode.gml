@@ -1,0 +1,1 @@
+show_debug_message("!!! SYSTEM CHECK: THE ROOM HAS LOADED !!!");

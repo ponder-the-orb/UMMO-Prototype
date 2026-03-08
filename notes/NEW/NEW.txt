@@ -1,0 +1,27 @@
+Yes, this is your Clean Cut. You have officially transitioned from "Loose Variables" to a Structured Data Architecture.
+
+By using scr_actor_init as the bridge between your Global Library (the "DNA") and the Actor (the "Living Body"), you’ve eliminated the messy redundancy.
+The New "Chain of Command"
+
+    The Library (global.enemies.enemy_goblin): You define the idea of a goblin once.
+
+    The Factory (scr_actor_init): It looks at the Library, copies the stats, and hands the "Suitcase" (actor_data) to the Actor.
+
+    The Actor (obj_actor): It doesn't know what its HP is until it receives that suitcase.
+
+The Final "One-to-One" Checklist
+
+To make sure this "Clean Cut" doesn't bleed, ensure these three points are synced:
+1. The Suitcase Path
+
+In your Battle Manager, you must stop looking for current_user.hp and start looking for: current_user.actor_data.body.hp
+2. The Action Path
+
+In your Battle Manager, when the goblin attacks, it now looks here: current_user.actor_data.actions[0]
+3. The Sprite Update
+
+Since we removed the old init_stats function from obj_actor, you should call a quick visual update right after you spawn an actor to make sure it has the right sprite:
+Code snippet
+
+// Right after: _goblin.actor_data = scr_actor_init("goblin");
+_goblin.sprite_index = _goblin.actor_data.sprites.idle;

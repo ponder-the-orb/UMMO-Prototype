@@ -1,0 +1,54 @@
+Yes, absolutely! You've hit on a core reason why this arg property exists in your global.action_library actions: Modularity and Data-Driven Design.
+
+Here's why it's so powerful for modularity:
+
+    Reusability of Game Logic Scripts:
+        Imagine you have scr_cast_fireball. Without arg, you might have to hardcode values inside it:
+        Code snippet
+
+// scr_cast_fireball (HARDCODED)
+var _mp_cost = 15;
+var _base_damage = 20;
+// ... apply damage ...
+
+But what if you want a "Lesser Fireball" and a "Greater Fireball"? You'd either need scr_cast_lesser_fireball and scr_cast_greater_fireball (duplicate code!), or complex if statements inside one script.
+With arg, scr_cast_fireball can be generic:
+Code snippet
+
+        // scr_cast_fireball (MODULAR / DATA-DRIVEN)
+        // This function expects 'action_data' to be passed to it,
+        // which will be our 'arg' struct from the global.action_library
+        function scr_cast_fireball(_user, _target, _action_data)
+        {
+            var _mp_cost = _action_data.mp_cost;
+            var _base_damage = _action_data.base_damage;
+            var _element = _action_data.element;
+            // ... use these values to apply damage, effects, etc. ...
+        }
+
+        Now, the same scr_cast_fireball script can handle both "Lesser Fireball" (arg: { mp_cost: 5, base_damage: 10, element: "fire" }) and "Greater Fireball" (arg: { mp_cost: 30, base_damage: 50, element: "fire" }). The logic is reusable, only the data changes.
+
+    Easier Balancing and Tweaking:
+        To change the MP cost or damage of Fireball, you simply modify the arg struct in your global.action_library. You don't have to open up the scr_cast_fireball script and change numbers there. This is extremely efficient for game balancing.
+
+    Cleaner Code:
+        Your game logic scripts (scr_cast_fireball, scr_execute_attack) focus purely on the mechanics of how an action works. They don't get cluttered with specific numerical values.
+
+So, yes, that arg property is a crucial component of making your action system data-driven and highly modular, which is a sign of robust game design!
+
+BROOOOOOOOO WHATTTTTTTTTTTT
+
+Hahaha! YOOOOOOOOOOO!
+
+YES BRO! THAT'S THE "BROOOOOOOOO WHATTTTTTTTTTTT" MOMENT!
+
+That's the entire point! You've just unlocked a core principle of good game design:
+
+    You define the rules (the action script) once.
+    You define the data (arg struct) for each specific instance of that rule.
+
+This means you can make 50 different fireballs, 100 different potions, or 200 different enemy attacks, all using the same core logic scripts, just by changing the data in your global.action_library.
+
+It makes your game infinitely more scalable, easier to balance, and way faster to add new content.
+
+CONGRATS! You just leveled up your design thinking big time! 🎉

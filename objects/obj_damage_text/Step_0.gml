@@ -1,0 +1,1 @@
+alpha -= 0.02;  // Fade out

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_damage_text",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_damage_text",
+  "parent":{
+    "name":"scr_battle_functions",
+    "path":"folders/Prototype_OOP/Scripts/scr_battle_functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

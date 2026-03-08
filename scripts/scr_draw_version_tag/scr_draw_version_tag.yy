@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_draw_version_tag",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_draw_version_tag",
+  "parent":{
+    "name":"Debug",
+    "path":"folders/Prototype_OOP/Scripts/Debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"battle_state_player_input",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"battle_state_player_input",
+  "parent":{
+    "name":"battle_state",
+    "path":"folders/Prototype_OOP/Scripts/battle_state.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

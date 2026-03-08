@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_action_library",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_action_library",
+  "parent":{
+    "name":"game_init",
+    "path":"folders/Prototype_OOP/Scripts/game_init.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

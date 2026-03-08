@@ -1,0 +1,26 @@
+    Yes, the data in the menu is still related to your core global.action_library. That's the master source for what an "Attack" or "Fireball" is.
+    And yes, battle_state_select_action is the script/function that sends data to the menu. It's the one doing the heavy lifting of preparing the menu's display options.
+    And yes, this is an intricate system! That's why it feels complicated.
+
+Let's clarify the flow from obj_actor to obj_menu again, focusing on content_data.options:
+
+    Start with the obj_actor:
+        Your obj_battle_manager.current_user (which is an obj_actor instance) has an actions array.
+        This actions array is populated during the unit's creation, and its contents (global.action_library.attack, global.action_library.fireball, etc.) are direct references to the original, detailed action structs from your global.action_library.
+
+    Enter battle_state_select_action (The Menu Preparer):
+        This script (part of obj_battle_manager's state machine) runs when it's the player's turn to choose.
+        It looks at obj_battle_manager.current_user.actions.
+        It then loops through each of those original action structs.
+        For each original action, it creates a brand new struct specifically designed for the menu. This new struct has text, action: menu_select_action, arg: [user, original_action_struct], and enabled.
+        All these newly created, menu-formatted structs are collected into a local array called _menu_options (or _target_sub_menu_array for sub-menus).
+
+    Sending to obj_menu:
+        battle_state_select_action then calls create_menu() (which you've seen).
+        create_menu() is responsible for creating an obj_menu instance and then calling its setup_actions() method, passing that prepared _menu_options array to it.
+
+    obj_menu receives the data:
+        Inside obj_menu's setup_actions() method, it receives this _menu_options array as an argument (let's call it _actions_list in that method).
+        The line content_data.options = _actions_list; simply says: "Take this array of prepared menu option structs and store it in my content_data.options variable, so I can draw them and let the player interact with them."
+
+So, yes, content_data.options does store "action structs" -- but specifically, it stores the menu-formatted action structs that were prepared by battle_state_select_action. These menu-formatted structs, in turn, still contain references back to your original global.action_library data.
