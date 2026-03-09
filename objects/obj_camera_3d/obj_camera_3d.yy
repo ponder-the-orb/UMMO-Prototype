@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_camera",
+  "%Name":"obj_camera_3d",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":72,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_camera",
+  "name":"obj_camera_3d",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_camera",
-    "path":"sprites/spr_camera/spr_camera.yy",
+    "name":"spr_camera_2",
+    "path":"sprites/spr_camera_2/spr_camera_2.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
