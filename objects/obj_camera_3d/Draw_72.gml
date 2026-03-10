@@ -15,8 +15,8 @@ var _y2 = _player.y;
 var _z2 = 0;
 
 var _xfrom = _player.x;
-var _yfrom = _player.y - 600;
-var _zfrom = 600;
+var _yfrom = _player.y - 200;
+var _zfrom = 200;
 
 var _cam = camera_get_active();
 
@@ -27,7 +27,7 @@ camera_set_view_mat(_cam, matrix_build_lookat(
 ));
 
 camera_set_proj_mat(_cam, matrix_build_projection_perspective_fov(
-    -20, -window_get_width() / window_get_height(), 1, 1000
+    -60, -window_get_width() / window_get_height(), 1, 1000
 ));
 
 camera_apply(_cam);
